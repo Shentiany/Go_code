@@ -8,9 +8,10 @@ func TestArrayInit(t *testing.T) {
 	var arr [3]int
 	arr1 := [4]int{1, 2, 3, 4}
 	arr3 := [...]int{1, 3, 4, 5}
+	arr4 := [4]string{1: "hello", 3: "world"}
 	arr1[1] = 5
 	t.Log(arr[1], arr[2])
-	t.Log(arr1, arr3)
+	t.Log(arr1, arr3, arr4)
 }
 
 func TestArrayTravel(t *testing.T) {
